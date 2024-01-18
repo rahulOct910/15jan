@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Positions</title>
+    <style>
+      #p {
+        width: 400px;
+        height: 400px;
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+      }
+      .common {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+      }
+      .blue {
+        /* background-color: blue; */
+        background-color: blue;
+        border-top-right-radius: 200px;
+        border-bottom-left-radius: 200px;
+        /* display: none; */
+        bottom: 0px;
+        right: 0px;
+      }
+      .green {
+        background-color: green;
+        border-top-left-radius: 200px;
+        border-bottom-right-radius: 200px;
+        top: 0px;
+        right: 0px;
+        /* display: none; */
+      }
+      .yellow {
+        background-color: yellow;
+        bottom: 0px;
+        left: 0px;
+        border-top-left-radius: 200px;
+        border-bottom-right-radius: 200px;
+        /* display: none; */
+      }
+      .purple {
+        background-color: purple;
+        border-top-right-radius: 200px;
+        border-bottom-left-radius: 200px;
+        /* display: none; */
+        left: 0px;
+        right: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="p">
+      <div class="common c1 blue"></div>
+      <div class="common c2 green"></div>
+      <div class="common c3 yellow"></div>
+      <div class="common c4 purple"></div>
+    </div>
+  </body>
+</html>

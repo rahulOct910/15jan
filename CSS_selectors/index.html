@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(207, 205, 42);
+        }
+
+        span#I1{
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+
+        span.c1{
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+        a[href="https://www.oklabs.com"]{
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: lavender;
+        }
+
+        /*  UNIVERSAL Selector  */
+
+        *{
+            border: 3px solid;
+            color: #000;
+        }
+
+        div,span#I1,span.c1,a[href="https://www.oklabs.com"]{
+            display: inline-block;
+        }
+        h1::before{
+            content: url('https://www.smileysapp.com/gif-emoji/waving-hi.gif');
+        }
+        div:hover{
+            background-color: royalblue;
+        }
+
+    </style>
+  </head>
+    <body>
+        <!-- Element Selector -->
+        <Div>CSS Element Selector</Div>
+
+        <!-- Element Selector -->
+        <span id="I1">CSS ID Selector</span>
+
+        <!-- Element Selector -->
+        <span class="c1">CSS CLASS Selector</span>
+
+         <!-- Attribute Selector -->
+         <a href="https://www.oklabs.com">CSS Attribute Selector</a>
+
+         <!-- Combination/Group Selector -->
+         <!-- div,span#I1,span.c1,a[href="https://www.oklabs.com"]{
+            display: inline-block; -->
+
+         <!-- Psudo Element Selector -->
+         <h1>Psudo Selector</h1>
+
+         <div id="c2">Psudo CLASS selector</div>
+
+
+
+    </body>
+</html>
